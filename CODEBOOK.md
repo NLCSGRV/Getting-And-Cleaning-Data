@@ -21,4 +21,4 @@ This code book that describes the data and any variables and transformations use
 * summaryData - dataframe containing the tidied and subsetted data for output
 
 ##Output 
-The output is a 180x68 data file named "sensordata_avg_by_subject_and_activity.txt", with the first column containing subject identifiers, the second column containing activity names and the remaining columns containing averages for the subsetted attributes.
+The output is a 180x68 data file named "sensor_avg_by_subject_and_activity.txt", with the first column containing subject identifiers, the second column containing activity names and the remaining columns containing averages for the subsetted attributes.

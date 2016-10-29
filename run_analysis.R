@@ -76,7 +76,7 @@ names(sensors) <- make.names(gsub("([()])","",names(sensors)))
    
 ## Write out the tidied data
 summaryData <- ddply(sensors, c("Subject","Activity"), numcolwise(mean))
-write.table(summaryData, file = "sensordata_avg_by_subject_and_activity.txt", row.name=FALSE)
+write.table(summaryData, file = "sensor_avg_by_subject_and_activity.txt", row.name=FALSE)
 
 ## Set the working directory back to the stored path
 setwd(oldWorkingDir)
