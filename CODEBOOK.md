@@ -13,7 +13,7 @@ This code book that describes the data and any variables and transformations use
 * yTrain - dataframe with the contents of Y_train.txt
 * subjectTest - dataframe holding the contents of subject_test.txt
 * subjectTrain - dataframe loaded from subject_train.txt
-* activityLabeks - dataframe created from activity_labels.txt
+* activityLabels - dataframe created from activity_labels.txt
 * featureLabels - dataframe created from feature_labels.txt
 * train - dataframe created by column-wise merging all the *Train dataframes above
 * test - dataframe created by column-wise merging all the *Test dataframes above
