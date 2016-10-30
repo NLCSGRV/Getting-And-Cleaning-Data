@@ -68,6 +68,7 @@ We make use of the ddply function from the plyr package to produce a new dataset
    * measurement_name - the name of the signal or calculated value, such as Acceleration or Gyroscope movements.
    * mean_or_std - whether the column contains the mean or standard deviation of the given measurement
    * X_Y_or_Z - the axis for which the measurement was taken.
+Further details of the format of the output file can be found in the codebook.
 
 ###Clearing down
 The last line of the source code set the working directory back to the value stored in the *oldWorkingDir* variable.
