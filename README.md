@@ -55,7 +55,7 @@ We then remove all variables that are no longer required before merging the *tra
 ###Tidying the data
 As the "Id" column in the sensors dataframe contains numeric coding for the activities, we first join the *sensors* data to the *activityLabels* data using the "Id" column. Then we create a new column in the *sensors* dataframe and use it to store the matching Activity from the *activityLabels* dataframe.
 
-Once the new "Activity" column is populated, the "Id" column is dropped from the *sensors* dataframe as it is surplus to requirements. We then removes any unused variables from the workspace before subsetting the dataframe to keep only those columns with "mean" or "std" in the name, in addition to the "Subject" and "Activity" columns.
+Once the new "Activity" column is populated, the "Id" column is dropped from the *sensors* dataframe as it is surplus to requirements. We then remove any unused variables from the workspace before subsetting the dataframe to keep only those columns with "mean" or "std" in the column name, in addition to the "Subject" and "Activity" columns.
 
 Finally, we tidy the column names by removing brackets and ensure the names are syntactically valid.
 
