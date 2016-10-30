@@ -9,12 +9,16 @@ Further details of the variables used during processing can be found in the [Cod
 
 >source("run_analysis.R")
 
+## Files Included
+* README.md (This file)
+* run_analysis.R - The R script used to create the tidy data set from the source files.
+* CodeBook.md - The code book describing the structure of the tidy data set and the process used to create it.
+
 ## Processing
 
 ###Initialisation
 
 The old working directory into the variable *oldWorkingDir* and sets the working directory to the value in *workingDir*. Change this latter variable to the working directory of your choice. The "plyr" package is loaded (and installed if necessary).
-
 
 ###Acquiring and decompressing the raw data
 We create a subdirectory to hold the downloaded data if this directory does not already exist. We then switch the working directory to that subdirectory and attempt to download the zip file containing the raw data, if that file does not already exist. Finally, we unzip the data file before setting the working directory back to the parent directory.
@@ -58,11 +62,12 @@ Finally, we tidy the column names by removing brackets and ensure the names are 
 ###Writing summary data
 We make use of the ddply function from the plyr package to produce a new dataset containing the average the variables in the *sensors* dataframe by subject and activity. This dataframe is then written to the file *sensor_avg_by_subject_and_activity.txt* using the write.table function. This dataset contains:
 
-* An identifier for each test subject. This is in the range 1 to 30.
+* An identifier for each test subject. This contains numeric identifiers in the range 1 to 30.
 * A label for each activity, such as WALKING, SITTING, STANDING, etc. 
 * 66 additional columns containing means for those columns in the source data that themselves contained mean or standard deviations. These are named according to the convention:
    * measurement_name - the name of the signal or calculated value, such as Acceleration or Gyroscope movements.
    * mean_or_std - whether the column contains the mean or standard deviation of the given measurement
+   * X_Y_or_Z - the axis for which the measurement was taken.
 
 ###Clearing down
 The last line of the source code set the working directory back to the value stored in the *oldWorkingDir* variable.
