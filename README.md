@@ -11,8 +11,8 @@ Further details of the variables used during processing can be found in the [Cod
 
 ## Files Included
 * README.md (This file)
-* run_analysis.R - The R script used to create the tidy data set from the source files.
-* CodeBook.md - The code book describing the structure of the tidy data set and the process used to create it.
+* run_analysis.R - The R script used to process the HAR dataset and create a tidy data set.
+* CodeBook.md - A document describing the process used to create the tidy dataset and the variables used.
 
 ## Processing
 
